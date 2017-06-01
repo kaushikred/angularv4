@@ -4,7 +4,7 @@
 
 <!-- We are using let here so that item will not go outside the ngFor loop -->
 <div *ngFor='let abc of videoList'>
-    <a href='videos/{{ abc.slug }}' >{{ abc.name }}</a>
+    <a routerLink='{{ abc.slug }}' >{{ abc.name }}</a>
     <div [innerHTML]='abc.embed'></div>
     <div style="position:relative;height:0;padding-bottom:56.25%" *ngIf='abc.embed'>
 
