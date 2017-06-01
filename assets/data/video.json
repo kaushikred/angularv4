@@ -1,0 +1,22 @@
+[
+    {
+     "name": "Welcome",
+     "slug": "item-1",
+     "embed": "1hyjLD7pk10",
+     "image": "assets/images/nature/1.jpg",
+     "featured": true
+    },
+    {
+     "name": "Item 2",
+     "slug": "item-2",
+     "embed": "1hyjLD7pk10",
+     "image": "assets/images/nature/2.jpg",
+     "featured": true
+    },
+    {
+     "name": "Item 3",
+     "slug": "item-3",
+     "embed": null,
+     "image": "assets/images/nature/3.jpg"
+    }
+]
