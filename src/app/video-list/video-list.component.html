@@ -1,0 +1,16 @@
+<p>
+  {{title }} @  {{todayDate | date:"dd/MM/yy"}}
+</p>
+
+<!-- We are using let here so that item will not go outside the ngFor loop -->
+<div *ngFor='let abc of videoList'>
+    <a href='videos/{{ abc.slug }}' >{{ abc.name }}</a>
+    <div [innerHTML]='abc.embed'></div>
+    <div style="position:relative;height:0;padding-bottom:56.25%" *ngIf='abc.embed'>
+
+        <iframe [src]="getEmbedUrl(abc) | safe" width="640" height="360" frameborder="0" style="position:absolute;width:100%;height:100%;left:0" allowfullscreen ></iframe>
+       
+    </div>
+
+
+</div>
